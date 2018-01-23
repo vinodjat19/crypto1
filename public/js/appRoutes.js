@@ -18,7 +18,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'GeekController'	
 		})
 
-		.when('/excel', {
+		.when('/zpx', {
 			templateUrl: 'views/zpx.html',
 			controller: 'zpxCtrl'	
 		});
