@@ -1,0 +1,73 @@
+<div ng-controller="zpxCtrl">
+  <div id="snackbar">{{snackHead}}</div>
+  <div class="container">
+    <div>Enter the currency name to get the analysis</div>
+    <div class="col-lg-12">
+        <div class="col-lg-4 left-table">
+            <div class="col-lg-12">
+                <div class="text-left col-lg-3">
+                    Edit
+                </div>
+                <div class="text-center col-lg-9">
+                    Stocks
+                </div>
+            </div>
+            <div class="col-lg-12 left-data cursor-pointer" ng-class="item.class" ng-repeat="item in dataName track by $index" ng-click="fetchDataByName(item.name, $index)">
+                <div class="col-lg-3 left-name">
+                    {{item.name}}
+                </div>
+               <!--  <div class="col-lg-3 left-value">
+                    {{item.high}}
+                </div>
+                <div class="col-lg-3 left-btn">
+                    <span class="text-in-btn">+{{item.percentage}}%</span>
+                </div> -->
+            </div>
+            <div class="col-lg-12 left-data">
+                <div class="col-lg-9 left-name">
+                    <!-- <label class="control-label">Age</label> -->
+                    <div class="inputBox">
+                        <input  ng-model="name" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <button class="btn" ng-click="addMore(name)">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 right-table" >
+            <div>AAPL In USD</div>
+            <div class="col-lg-12">
+                <div class="col-lg-7">
+                    <div class="col-lg-4">
+                        <button class="btn" ng-click="viewType('Low Price')">Low Price</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="btn" ng-click="viewType('High Price')">High Price</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="btn" ng-click="viewType('Volume')">Volume</button>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <div class="col-lg-3">
+                        <button class="btn" ng-click="backLink()">Low Price</button>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn" ng-click="backLink()">High Price</button>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn" ng-click="backLink()">Volume</button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-12">
+              <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</div>

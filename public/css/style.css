@@ -1,0 +1,101 @@
+body { padding-top:30px; }
+div#excel {
+    border: 1px solid blue;
+    width: 50%;
+    margin: 0 auto;
+}
+.upload {
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+.table-upload {
+    border: 1px solid green;
+}
+.btn-add {
+    margin-top: 24px;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.edit-delete {
+    margin-top: -5px;
+}
+.float-right {
+	float: right !important;
+}
+.btn-add-table {
+    margin-top: 24px;
+    margin-right: 13px;
+}
+
+/********************/
+.left-table {
+    border: 1px solid blue;
+}
+.right-table {
+    border: 1px solid red;
+}
+.left-btn {
+    background: green;
+}
+.left-data {
+    border-top: 1px solid white;
+}
+.left-table {
+    border: 1px solid blue;
+    background: black;
+    color: white;
+}
+.blue-back {
+    background: blue;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
